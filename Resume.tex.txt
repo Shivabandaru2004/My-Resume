@@ -1,0 +1,155 @@
+%-------------------------
+% Resume in Latex
+% Author : Adapted by Shiva Bandaru
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is ATS friendly
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-2pt}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small\textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+% resumeItemList environment (use \begin{resumeItemList} ... \end{resumeItemList})
+\newenvironment{resumeItemList}{\begin{itemize}}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Shiva Bandaru} \\ \vspace{1pt}
+    \small 8639411986 $|$ \href{mailto:shivabandaru80@gmail.com}{\underline{shivabandaru80@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/shiva-bandaru-a48637301}{\underline{linkedin.com/in/shiva-bandaru-a48637301}} $|$
+    \href{https://github.com/Shivabandaru2004}{\underline{github.com/Shivabandaru2004}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Malla Reddy College of Engineering and Technology}{Maisammaguda, Medchal}
+      {Bachelor of Technology}{2022 -- 2026}
+    \resumeSubheading
+      {Sri Chaitanya College}{Bonguluru, Telangana}
+      {M.P.C}{Aug. 2020 -- May 2022}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Data Analytics Virtual Experience}{June 2025}
+      {Deloitte Australia (Forage)}{Remote}
+
+    \begin{resumeItemList}
+        \resumeItem{Completed Deloitte-endorsed simulation in data analysis}
+        \resumeItem{Gained skills in data cleaning, visualization, and problem solving using real-world datasets}
+    \end{resumeItemList}
+      
+    \resumeSubheading
+      {JobReady Employability Skills}{March 2024}
+      {Wadhwani Foundation}{Remote}
+
+    \begin{resumeItemList}
+        \resumeItem{Completed professional skills training focused on communication, teamwork, and workplace problem-solving}
+    \end{resumeItemList}
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {Expense Tracker $|$ \emph{Flask, React, MySQL, HTML/CSS, Python}}{2024}
+      \begin{resumeItemList}
+        \resumeItem{Developed a full-stack web application to record, categorize, and manage daily expenses}
+        \resumeItem{Implemented Create, Read, Update, Delete (CRUD) functionality with category and date-based filters}
+        \resumeItem{Generated interactive visual reports and summaries to analyze spending patterns}
+        \resumeItem{Built Flask REST API backend with React frontend and MySQL database for persistent data storage}
+      \end{resumeItemList}
+
+    \resumeProjectHeading
+      {Skin Lesion Identification $|$ \emph{CNN, Flask, ISIC Dataset, Deep Learning}}{2025}
+      \begin{resumeItemList}
+        \resumeItem{Developed a deep learning model to classify skin lesions using convolutional neural networks (CNNs)}
+        \resumeItem{Trained the model on the ISIC dataset to identify common skin conditions with high accuracy}
+        \resumeItem{Implemented data preprocessing, augmentation, and normalization techniques to improve model generalization}
+        \resumeItem{Built a Flask-based web application for real-time image upload and lesion classification}
+      \end{resumeItemList}
+
+  \resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+  {\small
+   \item \textbf{Languages}: Python, Java, C, SQL, JavaScript, HTML/CSS
+   \item \textbf{Frameworks}: Flask, React, Node.js
+   \item \textbf{Developer Tools}: Git, VS Code, Visual Studio
+   \item \textbf{Libraries}: pandas, NumPy, Matplotlib
+  }
+ \end{itemize}
+
+\end{document}
